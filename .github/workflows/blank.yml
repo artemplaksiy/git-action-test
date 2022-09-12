@@ -1,0 +1,13 @@
+name: git actions workshop
+on: 
+  push:
+    branches:
+    - main
+jobs:
+  job1:
+    name: job1 name
+    runs-on: ubuntu-latest
+    steps:
+      - name: step one name
+      - uses: actions/checkout@v1
+      - run: echo "Hello World!"
